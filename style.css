@@ -1,14 +1,17 @@
-html,
-body {
+body,
+html {
   padding: 0px;
   margin: 0px;
   background-color: black;
   color: white;
-
+  height: 100%;
   display: flex;
   flex-direction: column;
   font-family: "DM Sans", sans-serif;
   overflow: hidden;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 .main_container {
   display: flex;
@@ -22,11 +25,11 @@ body {
   padding: 1rem;
 }
 .top_icons {
-  padding-top:0.6rem;
+  padding-top: 0.6rem;
   padding-bottom: 0.6rem;
 }
 .middle_icons {
-  padding-bottom:0.6rem;
+  padding-bottom: 0.6rem;
 }
 .icons {
   padding: 0.5rem;
@@ -54,26 +57,26 @@ body {
   color: #ffffff;
   font-size: 19px;
   font-weight: 400;
-  
 }
-.bottom_links > ul > li > a:hover{
-   text-decoration: underline;
-   color: blue;
-  }
-.icons:hover{
-    background-color: #282828;
+.bottom_links > ul > li > a:hover {
+  text-decoration: underline;
+  color: blue;
 }
-.install_app{
-   margin-top: 2rem;
+.icons:hover {
+  background-color: #282828;
 }
-.install_app>a{
-    font-size: 19px;
+.install_app {
+  margin-top: 2rem;
+}
+.install_app > a {
+  font-size: 19px;
   font-weight: 400;
   text-decoration: none;
   color: #ffffff;
 }
 .right_container {
-  flex: 0.8;
+  flex: 0.85;
+  overflow-y: auto;
   background: linear-gradient(
     180deg,
     #222222 0%,
@@ -87,7 +90,6 @@ body {
     #121212 85.45%,
     rgba(18, 18, 18, 0) 100%
   );
-  overflow-y: scroll !important;
 }
 .player {
   position: fixed;
@@ -109,7 +111,68 @@ body {
   font-weight: 700;
   color: #b3b3b3;
 }
+.top_right_section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-inline: 1rem;
+}
+.angel {
+  border-radius: 20px;
+  background-color: #0a0a0a;
+  height: max-content;
+  text-align: center;
+}
+.caret1,
+.caret2 {
+  background-color: #131313;
+  border-radius: 50%;
+  margin-inline: 0.6rem;
+}
+.caret {
+  display: flex;
+  height: fit-content;
+}
+.morning_playlist {
+  margin: 2rem;
+  width: 80%;
+}
 
+.all_playlist {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: scroll;
+}
+.playlist_grid {
+  overflow-y: scroll;
+}
+.playlist1 {
+  display: flex;
+  margin-inline: 1rem;
+  overflow-x: scroll;
+  margin-bottom: 1rem;
+}
+.playlist_card {
+  background-color: #181818;
+  padding: 0.8rem;
+  width: max-content;
+  height: fit-content;
+  margin-right: 1rem;
+}
+
+.playlist > p {
+  margin: 0px;
+  padding-left: 0.7rem;
+  padding-right: 3rem;
+}
+.playlist {
+  background-color: #303030;
+  border: none;
+  height: fit-content;
+  box-sizing: border-box;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+}
 .device_name {
   position: fixed;
   bottom: 0;
