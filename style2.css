@@ -1,0 +1,132 @@
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "DM Sans", sans-serif;
+  overflow: hidden;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+.main_container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  background-color: white;
+}
+.left_container {
+  flex: 0.15;
+  background-color: #000000;
+  padding-top: 0.6rem;
+  position: relative;
+}
+.album_art {
+  position: absolute;
+  bottom: 120px;
+}
+
+.top_icons {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-inline: 0.4rem;
+}
+.middle_icons {
+  padding-bottom: 0.6rem;
+  padding-inline: 0.4rem;
+}
+.icons {
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+.icons > input {
+  background-color: transparent;
+  border: none;
+}
+.left_container > h5 {
+  margin: 1rem;
+}
+.icons:hover {
+  background-color: #282828;
+  cursor: pointer;
+}
+.icons > a {
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 400;
+  color: #ffffff;
+  padding-left: 0.6rem;
+  text-align: center;
+}
+.right_container {
+  flex: 0.9;
+  overflow-y: auto;
+}
+.above_section {
+  background: linear-gradient(180deg, #90aea7 0%, #000000 89.7%);
+}
+.pop_right_now {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+}
+.playlist_info > h1 {
+  font-size: 80px;
+  font-weight: 900;
+}
+.play_pause_like{
+  padding-inline:1.5rem;
+}
+.recent_playing{
+  border:1px solid rgb(37, 36, 36);
+  margin-top: 1rem;
+  height: fit-content;
+}
+.singer_name>h6,.singer_name>p{
+    margin-bottom: 0px;
+    padding-left: 0.4rem;
+}
+.singer_name>p{
+  font-size: 13px;
+}
+.recent_playing:hover{
+  background-color: #282828;
+  cursor: pointer;
+}
+.below_section{
+  background-color: #000000;
+}
+.songs_to_play{
+  border:1px solid rgb(37, 36, 36);
+}
+.songs_to_play:hover{
+  background-color: #282828;
+  cursor: pointer;
+}
+.player {
+  position: fixed;
+  bottom: 0;
+  height: 90px;
+  width: 100%;
+  background-color: #181818;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+}
+.recent_play {
+  padding-left: 0.4rem;
+}
+.recent_play > h6 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.recent_play > p {
+  font-size: 15px;
+  font-weight: 700;
+  color: #b3b3b3;
+}
