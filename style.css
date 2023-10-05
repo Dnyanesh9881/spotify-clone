@@ -24,6 +24,10 @@ html {
   background-color: #000000;
   padding: 1rem;
 }
+.song>p{
+    font-size: 14px;
+    color: #B3B3B3;
+}
 .top_icons {
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
